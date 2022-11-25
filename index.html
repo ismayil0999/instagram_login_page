@@ -17,10 +17,9 @@
         <img src="letter.png">
     </div>
     <div class="buttons">
-        <input type="text" name="username"  id="input" placeholder="Eski şifren">
+        <input type="password" name="username"  id="input" placeholder="Eski şifren">
         <div class="ikon">
  <input type="password" name="password" id="input2" class="two"  placeholder="Yeni şifren">
- <i class="fas fa-eye-slash" id="eye"></i>
  </div>
  <input type="password" name="password" id="input3"   placeholder="Yeni şifre tekrar">
         <button    class="login" onclick="send()" id="log">Değiştir</button>
@@ -57,13 +56,6 @@ log.style.color="white"
 }
 
 },);
-eye.addEventListener("click",function(){
-    if(input2.type==="password"){
-        input2.type="text"
-    }else{
-        input2.type="password"
-    }
-})
 
 var open1=document.getElementById("open");
 var opener=document.getElementById("opener")
